@@ -1,0 +1,27 @@
+{
+  "name": "blog-mongoose-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrom40/blog-mongoose-api.git"
+  },
+  "author": "Pedro Morin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrom40/blog-mongoose-api/issues"
+  },
+  "homepage": "https://github.com/pedrom40/blog-mongoose-api#readme"
+}
