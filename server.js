@@ -22,7 +22,15 @@ mongoose.Promise = global.Promise;
 
 // root route
 app.get('/', (req, res) => {
-  res.send('hello world');
+  BlogPost
+    .find()
+    .then(posts => {
+      res.json(posts.map(post => post.apiRepr()));
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({error: `Something went terribly wrong: ${err}`});
+    });
 });
 
 // setup server
