@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 
 
-// setup db and app
+// setup db & app
 const {DATABASE_URL, PORT} = require('./config');
 const {BlogPost} = require('./models');
 const app = express();
